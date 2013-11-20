@@ -64,11 +64,11 @@ window.onkeydown = function(e) {
 
 window.onmousedown = function(e) {
   delay = 0;
-/*  if(fra.style.display = "block"){
+  if(fra.style.display = "block"){
     fra.style.display = "block";
     cont.style.display = "block";
-    cont.innerHTML = '<iframe src="http://keepfiringsoul.egloos.com/2774883" id="case1"></iframe>';
-  }*/
+   /* cont.innerHTML = '<iframe src="http://keepfiringsoul.egloos.com/2774883" id="case1"></iframe>';
+ */ }
    switch(man.count) {
     case 0: 
       /*cont.innerHTML = '<iframe src="" id=""></iframe>';*/
@@ -87,62 +87,61 @@ window.onmousedown = function(e) {
       window.open("http://keepfiringsoul.egloos.com/2774883", "width=800, height=700, toolbar=no, menubar=no, resizable=yes" );
       break;
     case 5: 
-      /*cont.innerHTML = '<iframe src="" id=""></iframe>';*/
       window.open("http://keepfiringsoul.egloos.com/2774883", "width=800, height=700, toolbar=no, menubar=no, resizable=yes" );
       break;
     case 6: 
       window.open("http://keepfiringsoul.egloos.com/2774883", "width=800, height=700, toolbar=no, menubar=no, resizable=yes" );
       break;
     case 7: 
-      window.open("http://keepfiringsoul.egloos.com/2774883", "width=800, height=700, toolbar=no, menubar=no, resizable=yes" );
+      window.open("http://keepfiringsoul.egloos.com/2794751", "width=800, height=700, toolbar=no, menubar=no, resizable=yes" );
       break;
     case 8: 
-      window.open("http://keepfiringsoul.egloos.com/2774883", "width=800, height=700, toolbar=no, menubar=no, resizable=yes" );
+      /*
+      window.open("http://keepfiringsoul.egloos.com/2775164", "width=800, height=700, toolbar=no, menubar=no, resizable=yes" );
+      */
+      cont.innerHTML = '<img src="images/symbol.jpg" id="case1"></img>';
       break;            
     case 9: 
-      window.open("http://keepfiringsoul.egloos.com/2774883", "width=800, height=700, toolbar=no, menubar=no, resizable=yes" );
+      window.open("http://youtu.be/XQeoontIR_s", "width=800, height=700, toolbar=no, menubar=no, resizable=yes" );
       break;      
     case 10: 
-      /*cont.innerHTML = '<iframe src="" id=""></iframe>';*/
-      window.open("http://keepfiringsoul.egloos.com/2774883", "width=800, height=700, toolbar=no, menubar=no, resizable=yes" );
+      window.open("http://keepfiringsoul.egloos.com/2775047", "width=800, height=700, toolbar=no, menubar=no, resizable=yes" );
       break;
     case 11: 
       window.open("http://keepfiringsoul.egloos.com/2774883", "width=800, height=700, toolbar=no, menubar=no, resizable=yes" );
       break;
     case 12: 
-      window.open("http://keepfiringsoul.egloos.com/2774883", "width=800, height=700, toolbar=no, menubar=no, resizable=yes" );
+      window.open("http://keepfiringsoul.egloos.com/2775144", "width=800, height=700, toolbar=no, menubar=no, resizable=yes" );
       break;
     case 13: 
-      window.open("http://keepfiringsoul.egloos.com/2774883", "width=800, height=700, toolbar=no, menubar=no, resizable=yes" );
+      window.open("http://keepfiringsoul.egloos.com/2775173", "width=800, height=700, toolbar=no, menubar=no, resizable=yes" );
       break;            
     case 14: 
       window.open("http://keepfiringsoul.egloos.com/2774883", "width=800, height=700, toolbar=no, menubar=no, resizable=yes" );
       break;
     case 15: 
-      /*cont.innerHTML = '<iframe src="" id=""></iframe>';*/
-      window.open("http://keepfiringsoul.egloos.com/2774883", "width=800, height=700, toolbar=no, menubar=no, resizable=yes" );
+      window.open("http://youtu.be/XQeoontIR_s", "width=800, height=700, toolbar=no, menubar=no, resizable=yes" );
       break;
     case 16: 
       window.open("http://keepfiringsoul.egloos.com/2774883", "width=800, height=700, toolbar=no, menubar=no, resizable=yes" );
       break;
     case 17: 
-      window.open("http://keepfiringsoul.egloos.com/2774883", "width=800, height=700, toolbar=no, menubar=no, resizable=yes" );
+      window.open("http://youtu.be/XmXhbno4j9E", "width=800, height=700, toolbar=no, menubar=no, resizable=yes" );
       break;
     case 18: 
       window.open("http://keepfiringsoul.egloos.com/2774883", "width=800, height=700, toolbar=no, menubar=no, resizable=yes" );
       break;            
     case 19: 
-      window.open("http://keepfiringsoul.egloos.com/2774883", "width=800, height=700, toolbar=no, menubar=no, resizable=yes" );
+      window.open("http://keepfiringsoul.egloos.com/2794751", "width=800, height=700, toolbar=no, menubar=no, resizable=yes" );
       break;
     case 20: 
-      /*cont.innerHTML = '<iframe src="" id=""></iframe>';*/
-      window.open("http://keepfiringsoul.egloos.com/2774883", "width=800, height=700, toolbar=no, menubar=no, resizable=yes" );
+      window.open("http://youtu.be/XmXhbno4j9E", "width=800, height=700, toolbar=no, menubar=no, resizable=yes" );
       break;
     case 21: 
-      window.open("http://keepfiringsoul.egloos.com/2774883", "width=800, height=700, toolbar=no, menubar=no, resizable=yes" );
+      window.open("http://keepfiringsoul.egloos.com/2775144", "width=800, height=700, toolbar=no, menubar=no, resizable=yes" );
       break;
     case 22: 
-      window.open("http://keepfiringsoul.egloos.com/2774883", "width=800, height=700, toolbar=no, menubar=no, resizable=yes" );
+      window.open("http://youtu.be/_FTBZ4ouvLk", "width=800, height=700, toolbar=no, menubar=no, resizable=yes" );
       break;
     case 23: 
       window.open("http://keepfiringsoul.egloos.com/2774883", "width=800, height=700, toolbar=no, menubar=no, resizable=yes" );

@@ -1,3 +1,36 @@
+
+
+
+
+
+/* 어떻게 div를 scene 안에 만들어서 배열 데이터랑 연결하지?
+var item_Num = 5; 
+var pf = new Array();
+
+var add_pf = function(){
+	var scn = document.querySelector(#scene);
+    scn.appendChild
+    var add_block = function(){
+      for(var i=0;i<item_Num; i++){}
+      scn.createElement('div');
+    }
+    };
+    
+	for(var i=0; i<item_Num; i++){
+     pf[i].id=i;
+	 pf[i].style['width'] = '300px';
+	 pf[i].style['height'] = '500px';
+	 pf[i].style['background-color']="black";
+	 pf[i].style['background-image']="url("+i+".png)";
+  }
+};
+
+*/
+
+
+
+
+/* 이전에 작업했던거
 var c,g,sprite,frame,closeBt,content;
 var man = {
   count: 0,
@@ -67,11 +100,11 @@ window.onmousedown = function(e) {
   if(fra.style.display = "block"){
     fra.style.display = "block";
     cont.style.display = "block";
-   /* cont.innerHTML = '<iframe src="http://keepfiringsoul.egloos.com/2774883" id="case1"></iframe>';
- */ }
+    cont.innerHTML = '<iframe src="http://keepfiringsoul.egloos.com/2774883" id="case1"></iframe>';
+  }
    switch(man.count) {
     case 0: 
-      /*cont.innerHTML = '<iframe src="" id=""></iframe>';*/
+      cont.innerHTML = '<iframe src="" id=""></iframe>';
       window.open("http://keepfiringsoul.egloos.com/2774883", "width=800, height=700, toolbar=no, menubar=no, resizable=yes" );
       break;
     case 1: 
@@ -96,9 +129,9 @@ window.onmousedown = function(e) {
       window.open("http://keepfiringsoul.egloos.com/2794751", "width=800, height=700, toolbar=no, menubar=no, resizable=yes" );
       break;
     case 8: 
-      /*
+      
       window.open("http://keepfiringsoul.egloos.com/2775164", "width=800, height=700, toolbar=no, menubar=no, resizable=yes" );
-      */
+      
       cont.innerHTML = '<img src="images/symbol.jpg" id="case1"></img>';
       break;            
     case 9: 
@@ -147,4 +180,5 @@ window.onmousedown = function(e) {
       window.open("http://keepfiringsoul.egloos.com/2774883", "width=800, height=700, toolbar=no, menubar=no, resizable=yes" );
       break;            
   }
-};
+};*/
+

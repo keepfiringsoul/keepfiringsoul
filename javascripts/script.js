@@ -12,7 +12,7 @@ window.onmousemove = function(e) {
     var dx = (window.innerWidth / 2 - e.pageX) * 0.1;
     var dy = (window.innerHeight / 2 - e.pageY) * 0.1;
     if(scene) {
-        scene.style['-webkit-transform'] = 'rotateX('+dy +'deg)';/*'rotate3d(' + dx + 'deg,' dy + 'deg,'+ 0)'*/
+        scene.style['-webkit-transform'] ='rotate3d(' + dx+','+ dy + ',0,10deg)';
     }
 };
 

@@ -9,10 +9,10 @@ window.onload = function() {
 };
 
 window.onmousemove = function(e) {
-    var dx = (window.innerWidth / 2 - e.pageX) * 0.1;
-    var dy = (window.innerHeight / 2 - e.pageY) * 0.1;
+    var dx = window.innerWidth / 2 - e.pageX;
+    var dy = window.innerHeight / 2 - e.pageY;
     if(scene) {
-        scene.style['-webkit-transform'] ='rotate3d(' + dx+','+ dy + ',0,10deg)';
+        scene.style['-webkit-transform'] ='rotate3d(' + dx+','+ dy + ',0,20deg)';
     }
 };
 

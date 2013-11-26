@@ -1,5 +1,7 @@
 
 #scene{
+  width: window.innerWidth;
+  height: 500px;
   -webkit-transform-style: preserve-3d;  
 }
 
@@ -9,6 +11,13 @@
   height: 200px;
   background:black;
 }
+
+.block:hover{
+  background-color: green; 
+  
+}
+
+
 
 #b_01{
    -webkit-transform: translate3d(100px, 20px, 10px);  

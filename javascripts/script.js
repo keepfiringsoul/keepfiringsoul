@@ -24,22 +24,20 @@ var item_Num = 5;
 var pf = new Array();
 
 var add_pf = function(){
-	var scn = document.querySelector(#scene);
-    scn.appendChild
-    var add_block = function(){
-      for(var i=0;i<item_Num; i++){}
-      scn.createElement('div');
-    }
+	var scn = document.querySelector(#scene);  
+    for(var i=0;i<item_Num; i++){
+		var d = document.createElement('div');
+		scn.appendChild(d);
+		pf.push(d);
+        pf[i].idName="b_"+i;
+	    pf[i].style['width'] = '300px';
+	    pf[i].style['height'] = '500px';
+	    pf[i].style['background-color']="black";
+	    pf[i].style['background-image']="url("+i+".png)"; 
+    	}
+	
     };
-    
-	for(var i=0; i<item_Num; i++){
-     pf[i].idName="b_"+i;
-	 pf[i].style['width'] = '300px';
-	 pf[i].style['height'] = '500px';
-	 pf[i].style['background-color']="black";
-	 pf[i].style['background-image']="url("+i+".png)";
-  }
-};
+
 
 */
 

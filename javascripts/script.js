@@ -1,10 +1,11 @@
 var scene;
-var item_Num = 5; 
+var item_Num = 25; 
 var pf = [];
+var rd = [];
 	
 var block = {
-	width: 300,
-	height: 500,
+	width: 100,
+	height: 150,
 };
 
 var init = function() {
@@ -25,15 +26,28 @@ window.onmousemove = function(e) {
     }
 };
 
+var rand = function(min, max) {
+	return min + Math.random() * (max - min);	
+};
+
+var randi = function(min, max) {
+	return Math.floor(rand(min, max));
+};
 
 var add_pf = function(){  
     for(var i=0;i<item_Num; i++){
+		var randomX = randi(50,1000);
+		var randomY = randi(50,400);
+		var randomZ = randi(0,200);
 		var d = document.createElement('div');
-		d.idName='b_'+i;
+		d.id='b_'+i;
+		d.className = 'block';
 	    d.style['width'] = block.width+'px';
 	    d.style['height'] = block.height+'px';
 	    d.style['background-color']='black';
-	    d.style['background-image']='url('+i+'.png)'; 
+	    d.style['background-image']='url('+i+'.png)';     	
+		d.style['-webkit-transform'] = 'translate3d('+randomX+'px,'+randomY+'px,'+randomZ+'px)';
+		d.style['-webkit-transform-origin'] = randomX+'px'+ randomY+'px'+ randomZ+'px';
     	scene.appendChild(d);
 		pf.push(d);
     	}

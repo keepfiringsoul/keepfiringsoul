@@ -1,7 +1,16 @@
 var scene;
+var item_Num = 5; 
+var pf = [];
+	
+var block = {
+	width: 300,
+	height: 500,
+};
 
 var init = function() {
-    scene = document.querySelector('#scene');    
+    scene = document.querySelector('#scene');
+
+	add_pf();
 };
 
 window.onload = function() {
@@ -17,26 +26,23 @@ window.onmousemove = function(e) {
 };
 
 
+var add_pf = function(){  
+    for(var i=0;i<item_Num; i++){
+		var d = document.createElement('div');
+		d.idName='b_'+i;
+	    d.style['width'] = block.width+'px';
+	    d.style['height'] = block.height+'px';
+	    d.style['background-color']='black';
+	    d.style['background-image']='url('+i+'.png)'; 
+    	scene.appendChild(d);
+		pf.push(d);
+    	}
+	};
 
 
 /* 어떻게 div를 scene 안에 만들어서 배열 데이터랑 연결하지?
-var item_Num = 5; 
-var pf = new Array();
 
-var add_pf = function(){
-	var scn = document.querySelector(#scene);  
-    for(var i=0;i<item_Num; i++){
-		var d = document.createElement('div');
-		scn.appendChild(d);
-		pf.push(d);
-        pf[i].idName="b_"+i;
-	    pf[i].style['width'] = '300px';
-	    pf[i].style['height'] = '500px';
-	    pf[i].style['background-color']="black";
-	    pf[i].style['background-image']="url("+i+".png)"; 
-    	}
-	
-    };
+
 
 
 */

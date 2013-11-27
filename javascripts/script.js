@@ -1,5 +1,5 @@
 var scene;
-var item_Num = 25; 
+var item_Num = 33; 
 var pf = [];
 var rd = [];
 	
@@ -45,7 +45,7 @@ var add_pf = function(){
 	    d.style['width'] = block.width+'px';
 	    d.style['height'] = block.height+'px';
 	    d.style['background-color']='black';
-	    d.style['background-image']='url('+i+'.png)';     	
+	    d.style['background-image']='url(./images/'+i+'.png)';     	
 		d.style['-webkit-transform'] = 'translate3d('+randomX+'px,'+randomY+'px,'+randomZ+'px)';
 		d.style['-webkit-transform-origin'] = randomX+'px'+ randomY+'px'+ randomZ+'px';
     	scene.appendChild(d);

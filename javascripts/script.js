@@ -2,6 +2,7 @@ var scene;
 var item_Num = 33; 
 var pf = [];
 var rd = [];
+var bl = [];
 	
 var block = {
 	width: 100,
@@ -10,8 +11,8 @@ var block = {
 
 var init = function() {
     scene = document.querySelector('#scene');
-
 	add_pf();
+	add_blur();
 };
 
 window.onload = function() {
@@ -47,17 +48,26 @@ var add_pf = function(){
 	    d.style['background-color']='black';
 	    d.style['background-image']='url(./images/'+i+'.png)';     	
 		d.style['-webkit-transform'] = 'translate3d('+randomX+'px,'+randomY+'px,'+randomZ+'px)';
-		d.style['-webkit-transform-origin'] = randomX+'px'+ randomY+'px';
-
-		if(randomZ >150 || randomZ <200 ){
-			d.style['-webkit-filter']= 'blur(2px)';
-		}
-		
+		d.style['-webkit-transform-origin'] = randomX+'px'+ randomY+'px';		
     	scene.appendChild(d);
 		pf.push(d);
+		bl.push(randomZ);
     	}
 	};
 
+var add_blur = function(){
+	for(var i=0;i<item_Num; i++){
+		if(bl[i]>0 && bl[i]<50){
+			pf[i].style['-webkit-filter'] = 'blur(3px)';
+		}
+		if(bl[i]>50 && bl[i]<100){
+			pf[i].style['-webkit-filter'] = 'blur(1px)';
+		}
+		if(bl[i]>100 && bl[i]<150){
+			pf[i].style['-webkit-filter'] = 'blur(0.5px)';
+		}
+	}
+}
 
 /* 어떻게 div를 scene 안에 만들어서 배열 데이터랑 연결하지?
 

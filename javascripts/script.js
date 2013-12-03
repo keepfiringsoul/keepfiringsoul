@@ -47,7 +47,12 @@ var add_pf = function(){
 	    d.style['background-color']='black';
 	    d.style['background-image']='url(./images/'+i+'.png)';     	
 		d.style['-webkit-transform'] = 'translate3d('+randomX+'px,'+randomY+'px,'+randomZ+'px)';
-		d.style['-webkit-transform-origin'] = randomX+'px'+ randomY+'px'+ randomZ+'px';
+		d.style['-webkit-transform-origin'] = randomX+'px'+ randomY+'px';
+
+		if(randomZ >150 || randomZ <200 ){
+			d.style['-webkit-filter']= 'blur(2px)';
+		}
+		
     	scene.appendChild(d);
 		pf.push(d);
     	}

@@ -1,3 +1,7 @@
+#stage{
+   -webkit-perspective: 700px center center;
+   -webkit-perspective-origin: 50% 50%;
+}
 
 #scene{
   width: window.innerWidth;
@@ -11,6 +15,7 @@
 
 .block:hover{
   cursor: pointer;
+  -webkit-transform-origin: 100px 100px;
   -webkit-animation: rot 3s infinite;
 }
 
@@ -19,11 +24,10 @@
 @-webkit-keyframes rot{
     0%{
         -webkit-transform : rotateY(0deg);
-        -webkit-transform-origin : 0% 100%;
     }
     100%{
         -webkit-transform : rotateY(360deg);
-        -webkit-transform-origin : 0% 100%;
+        
     }
     
 }

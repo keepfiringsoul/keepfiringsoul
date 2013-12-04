@@ -15,11 +15,19 @@ var init = function() {
     scene = document.querySelector('#scene');
 	add_pf();
 	add_blur();
-	rotDiv();
 };
+/*
+var rotDiv = function() {
+	for(var i=0;i<item_Num; i++){
+		pf[i].onmouseover = function(){ 
+			pf[i].style['-webkit-transform'] = 'translate3d('+rd_x[i]+'px,'+rd_y[i]+'px,'+rd_z[i]+'px) rotateY(360deg)';
+		}
+	}
+}*/
 
 window.onload = function() {
-    init();  
+    init();
+
 };
 
 window.onmousemove = function(e) {
@@ -56,14 +64,16 @@ var add_pf = function(){
 		rd_x.push(randomX);
 		rd_y.push(randomY);
 		rd_z.push(randomZ);
+    	d.onmouseover = function(){ 
+			d.style['-webkit-transform'] = 'translate3d('+randomX+'px,'+randomY+'px,'+randomZ+'px) rotateY(360deg)';
+    		};
+		d.onmouseout = function(){ 
+			d.style['-webkit-transform'] = 'translate3d('+randomX+'px,'+randomY+'px,'+randomZ+'px) rotateY(0deg)';
+    		};
     	}
 	};
 
-var rotDiv = function(){
-	for(var i=0;i<item_Num; i++){
-	pf[i].style['-webkit-transform'] = 'translate3d('+rd_x[i]+'px,'+rd_y[i]+'px,'+rd_z[i]+'px) rotateY(180deg)';
-	}	
-}
+
 
 
 var add_blur = function(){
@@ -80,12 +90,6 @@ var add_blur = function(){
 	}
 }
 
-/* 어떻게 div를 scene 안에 만들어서 배열 데이터랑 연결하지?
-
-
-
-
-*/
 
 
 

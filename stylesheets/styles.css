@@ -12,6 +12,7 @@
 .block{
   position:absolute;
   transition: 2s;
+  transition-delay: 0;
 }
 
 

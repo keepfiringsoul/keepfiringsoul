@@ -14,14 +14,19 @@ var block = {
 var init = function() {
     scene = document.querySelector('#scene');
 	add_pf();
-	add_blur();
+	add_blur();	
+	for(var i=0;i<pf.length; i++){
+		pf[i].onmouseover = function(){ 
+			pf[i].style['-webkit-transform'] = 'translate3d('+rd_x[i]+'px,'+rd_y[i]+'px,'+rd_z[i]+'px) rotateY(360deg)';
+		};
+	}
 };
 /*
 var rotDiv = function() {
-	for(var i=0;i<item_Num; i++){
+	for(var i=0;i<pf.length; i++){
 		pf[i].onmouseover = function(){ 
 			pf[i].style['-webkit-transform'] = 'translate3d('+rd_x[i]+'px,'+rd_y[i]+'px,'+rd_z[i]+'px) rotateY(360deg)';
-		}
+		};
 	}
 }*/
 
@@ -64,12 +69,12 @@ var add_pf = function(){
 		rd_x.push(randomX);
 		rd_y.push(randomY);
 		rd_z.push(randomZ);
-    	d.onmouseover = function(){ 
+    	/*d.onmouseover = function(){ 
 			d.style['-webkit-transform'] = 'translate3d('+randomX+'px,'+randomY+'px,'+randomZ+'px) rotateY(360deg)';
     		};
 		d.onmouseout = function(){ 
 			d.style['-webkit-transform'] = 'translate3d('+randomX+'px,'+randomY+'px,'+randomZ+'px) rotateY(0deg)';
-    		};
+    		};*/
     	}
 	};
 

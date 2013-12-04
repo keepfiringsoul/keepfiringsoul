@@ -2,7 +2,9 @@ var scene;
 var item_Num = 33; 
 var pf = [];
 var rd = [];
-var bl = [];
+var rd_x = [];
+var rd_y = [];
+var rd_z = [];
 	
 var block = {
 	width: 100,
@@ -13,6 +15,7 @@ var init = function() {
     scene = document.querySelector('#scene');
 	add_pf();
 	add_blur();
+	rotDiv();
 };
 
 window.onload = function() {
@@ -47,23 +50,31 @@ var add_pf = function(){
 	    d.style['height'] = block.height+'px';
 	    d.style['background-color']='black';
 	    d.style['background-image']='url(./images/'+i+'.png)';     	
-		d.style['-webkit-transform'] = 'translate3d('+randomX+'px,'+randomY+'px,'+randomZ+'px)';
-		d.style['-webkit-transform-origin'] = randomX+'px'+ randomY+'px';		
+		d.style['-webkit-transform'] = 'translate3d('+randomX+'px,'+randomY+'px,'+randomZ+'px) rotateY(0deg)';		
     	scene.appendChild(d);
 		pf.push(d);
-		bl.push(randomZ);
+		rd_x.push(randomX);
+		rd_y.push(randomY);
+		rd_z.push(randomZ);
     	}
 	};
 
+var rotDiv = function(){
+	for(var i=0;i<item_Num; i++){
+	pf[i].style['-webkit-transform'] = 'translate3d('+rd_x[i]+'px,'+rd_y[i]+'px,'+rd_z[i]+'px) rotateY(180deg)';
+	}	
+}
+
+
 var add_blur = function(){
 	for(var i=0;i<item_Num; i++){
-		if(bl[i]>0 && bl[i]<50){
+		if(rd_z[i]>0 && rd_z[i]<50){
 			pf[i].style['-webkit-filter'] = 'blur(3px)';
 		}
-		if(bl[i]>50 && bl[i]<100){
+		if(rd_z[i]>50 && rd_z[i]<100){
 			pf[i].style['-webkit-filter'] = 'blur(1px)';
 		}
-		if(bl[i]>100 && bl[i]<150){
+		if(rd_z[i]>100 && rd_z[i]<150){
 			pf[i].style['-webkit-filter'] = 'blur(0.5px)';
 		}
 	}

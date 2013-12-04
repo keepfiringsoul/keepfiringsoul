@@ -11,16 +11,18 @@
 
 .block{
   position:absolute;
+  transition: 2s;
 }
+
 
 .block:hover{
   cursor: pointer;
-  -webkit-transform-origin: 100px 100px;
-  -webkit-animation: rot 3s infinite;
 }
 
+ /* -webkit-animation: rot 3s infinite;*/
 
 
+/*
 @-webkit-keyframes rot{
     0%{
         -webkit-transform : rotateY(0deg);
@@ -30,7 +32,7 @@
         
     }
     
-}
+}*/
 
 
 

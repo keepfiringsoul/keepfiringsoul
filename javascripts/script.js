@@ -8,7 +8,7 @@ var	rd_z = [];
 	
 var block = {
 	width: 100,
-	height: 150,
+	height: 120,
 };
 
 var rand = function(min, max) {

@@ -1,3 +1,14 @@
+
+
+#back{
+	background-image: url('../images/back.jpg');
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	-webkit-animation: color_change 240s infinite;
+	margin: -8px;
+}
+
 #closeBt{
 	opacity: 1;
 	width: 50px;
@@ -66,19 +77,22 @@
   cursor: pointer;
 }
 
- /* -webkit-animation: rot 3s infinite;*/
 
 
-/*
-@-webkit-keyframes rot{
+
+
+@-webkit-keyframes color_change{
     0%{
-        -webkit-transform : rotateY(0deg);
+        -webkit-filter: hue-rotate(0deg) brightness(1);
+    }
+	50%{
+        -webkit-filter: hue-rotate(180deg) brightness(0.8);
+        
     }
     100%{
-        -webkit-transform : rotateY(360deg);
+        -webkit-filter: hue-rotate(0deg) brightness(1);
         
     }
     
-}*/
-
+}
 

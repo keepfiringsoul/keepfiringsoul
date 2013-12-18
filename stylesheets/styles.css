@@ -9,7 +9,7 @@ overflow: hidden;
 	height: 100%;
 	position: absolute;
 	-webkit-animation: color_change 240s infinite;
-	-webkit-animation: wave 10s infinite;
+	-webkit-animation: wave 7s infinite;
 	margin: -8px;
 }
 
@@ -72,7 +72,7 @@ overflow: hidden;
 
 .block{
   position:absolute;
-  transition: 1s;
+  transition: 0.8s;
   transition-delay: 0;
 }
 

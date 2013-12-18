@@ -7,8 +7,8 @@ var	rd_y = [];
 var	rd_z = [];
 	
 var block = {
-	width: 100,
-	height: 120,
+	width: 200,
+	height: 100,
 };
 
 var rand = function(min, max) {
@@ -168,7 +168,8 @@ var init = function() {
 		d.className = 'block';
 	    d.style['width'] = block.width+'px';
 	    d.style['height'] = block.height+'px';
-	    d.style['background-image']='url(./images/'+i+'.png)';     	
+	    d.style['background-image']='url(./images/'+i+'.png)';
+		d.style['-webkit-mask-image']='url(./images/mask.png)';
 		d.style['-webkit-transform'] = 'translate3d('+randomX+'px,'+randomY+'px,'+randomZ+'px) rotateY(0deg)';		
     	scene.appendChild(d);
 		d.rd_x = randomX;
